@@ -4,10 +4,10 @@
 //constantes
 int DIA_MAX=31;
 int MES_MAX=12;
-int ANO_MAX=2025;
+int ANIO_MAX=2025;
 int dia=0;
 int mes=0;
-int ano=0;
+int anio=0;
 bool fecha_valida=true;
 int edad=0;
 bool calculo_edad=true;
@@ -17,10 +17,10 @@ void main(){
     printf("Ingrese el mes de nacimiento: \n");
     scanf("%d", &mes);
     printf("Ingrese el ano de nacimiento: \n");
-    scanf("%d", &ano);
-    fecha_valida= (dia>0 & dia<=DIA_MAX) & (mes>0 & mes<=MES_MAX) & (ano>0 & ano<=ANO_MAX);
-    calculo_edad= ano>1 & ano<=ANO_MAX;
-    edad= (2026-ano)*calculo_edad;
+    scanf("%d", &anio);
+    fecha_valida= (dia>0 & dia<=DIA_MAX) & (mes>0 & mes<=MES_MAX) & (anio>0 & anio<=ANIO_MAX);
+    calculo_edad= anio>1 & anio<=ANIO_MAX;
+    edad= (2026-anio)*calculo_edad;
     printf("La fecha  ingresada es: \n");
     printf("1=valida \n");
     printf("0=invalida \n");
